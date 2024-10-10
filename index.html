@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Newsletter sign-up form with success message</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        color: #fff;
+        text-align: center;
+      }
+      .attribution a {
+        color: #fd5f7b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-col">
+        <h1 class="heading">Stay updated!</h1>
+        <p class="text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="features-container">
+          <div class="features">
+            <img src="./assets/images/icon-list.svg" alt="checkmark" />
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="features">
+            <img src="./assets/images/icon-list.svg" alt="checkmark" />
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="features">
+            <img src="./assets/images/icon-list.svg" alt="checkmark" />
+            <p>And much more</p>
+          </div>
+        </div>
+        <div class="flex-cont">
+          <label for="email">Email address</label>
+          <span class="hidden">valid e-mail required</span>
+        </div>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="email@company.com"
+          spellcheck="false"
+        />
+        <button type="submit">Subscribe to monthly newsletter</button>
+      </div>
+      <div class="img-col">
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="illustration-sign-up-desktop"
+        />
+      </div>
+    </div>
+
+    <div class="success-cont hidden">
+      <img src="./assets/images/icon-success.svg" alt="checkmark" />
+      <h1 class="sux-head">Thanks for subscribing!</h1>
+      <p class="sux-des">
+        A confirmation email has been sent to
+        <span id="span">{email}</span>. Please open it and click the button
+        inside to confirm your subscription
+      </p>
+      <button class="dismiss" type="button">Dismiss message</button>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.github.com/naveenprasad07" target="_blank"
+        >Naveen Prasad</a
+      >.
+    </div>
+  </body>
+</html>
