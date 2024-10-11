@@ -46,8 +46,9 @@ body {
   margin-bottom: 1.8rem;
   letter-spacing: 0.2rem;
 }
+
 .img-col img {
-  width: 36rem;
+  width: 100%;
 }
 
 .text {
@@ -116,8 +117,8 @@ button:focus {
 button:active,
 button:hover {
   background: linear-gradient(45deg, #ff527a, #fd6937);
-  box-shadow: 2px 0 20px rgba(253, 104, 55, 0.361),
-    -2px 0 20px rgba(255, 82, 122, 0.304);
+  box-shadow: 2px 8px 20px rgba(253, 104, 55, 0.361),
+    -2px 8px 20px rgba(255, 82, 122, 0.304);
 }
 
 .flex-cont {
@@ -167,4 +168,39 @@ button:hover {
 
 .dismiss {
   width: 100%;
+}
+
+@media (max-width: 970px) {
+  .container {
+    flex-direction: column-reverse;
+    padding: 0;
+    padding: 1.8rem;
+    grid-template-columns: 1fr;
+    width: 50rem;
+    row-gap: 1.8rem;
+  }
+
+  .text-col {
+    flex: 1;
+  }
+
+  .img-col {
+    width: 100%;
+    flex: 1;
+  }
+
+  .success-cont {
+    width: 40rem;
+    margin: 12.8rem auto;
+    background-color: #fff;
+    padding: 5rem;
+    padding-top: 1.8rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 45%;
+  }
 }

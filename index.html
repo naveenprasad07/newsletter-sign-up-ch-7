@@ -62,10 +62,20 @@
         <button type="submit">Subscribe to monthly newsletter</button>
       </div>
       <div class="img-col">
-        <img
-          src="./assets/images/illustration-sign-up-desktop.svg"
-          alt="illustration-sign-up-desktop"
-        />
+        <picture>
+          <source
+            media="(min-width: 1000px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+          />
+          <source
+            media="(max-width: 970px)"
+            srcset="./assets/images/illustration-sign-up-mobile.svg"
+          />
+          <img
+            src="./assets/images/illustration-sign-up-desktop.svg"
+            alt="Sign up illustration"
+          />
+        </picture>
       </div>
     </div>
 
